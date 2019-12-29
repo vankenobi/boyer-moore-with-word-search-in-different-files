@@ -4,6 +4,7 @@ lazy-object-proxy==1.4.3
 lxml==4.4.2
 mccabe==0.6.1
 pylint==2.4.4
+PyPDF2==1.26.0
 python-docx==0.8.10
 six==1.13.0
 typed-ast==1.4.0

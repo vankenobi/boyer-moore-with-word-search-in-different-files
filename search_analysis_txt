@@ -50,3 +50,29 @@
 		1 matches found in drain
 			SAME MATCHES
 		No same matches
+
+		TXT FILE 				Number of words--> 274
+			SIMILAR MATCHES		 Pattern ->> 'rain'  Run Time ->> 0.0003666877746582031 seconds
+		No similar matches
+	No same matches
+
+		DOCX FILE 				Number of words->> 102678 
+			SIMILAR MATCHES		 Pattern->> 'rain'  Run Time->> 0.14605712890625 seconds
+		7 matches found in training
+		1 matches found in strain
+		1 matches found in drain
+			SAME MATCHES
+		No same matches
+
+		HTML FILE 				Number of words--> 297
+			SIMILAR MATCHES		 Pattern ->> 'rain'  Run Time ->> 0.0005259513854980469 seconds
+		No similar matches
+	No same matches
+
+		PDF FILE 				Number of words->> 108592 
+			SIMILAR MATCHES		 Pattern->> 'rain'  Run Time->> 0.1562352180480957 seconds
+		7 matches found in training
+		1 matches found in strain
+		1 matches found in drain
+			SAME MATCHES
+		No same matches
