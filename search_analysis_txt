@@ -1,0 +1,52 @@
+
+		TXT FILE 				Number of words--> 274
+			SIMILAR MATCHES		 Pattern ->> 'rain'  Run Time ->> 0.001119852066040039 seconds
+		No similar matches
+	No same matches
+
+		DOCX FILE 				Number of words->> 102678 
+			SIMILAR MATCHES		 Pattern->> 'rain'  Run Time->> 0.6207664012908936 seconds
+		1 matches found in drain
+		1 matches found in strain
+		7 matches found in training
+			SAME MATCHES
+		No same matches
+
+		HTML FILE 				Number of words--> 297
+			SIMILAR MATCHES		 Pattern ->> 'rain'  Run Time ->> 0.001384735107421875 seconds
+		No similar matches
+	No same matches
+
+		PDF FILE 				Number of words->> 108592 
+			SIMILAR MATCHES		 Pattern->> 'rain'  Run Time->> 0.4932539463043213 seconds
+		1 matches found in drain
+		1 matches found in strain
+		7 matches found in training
+			SAME MATCHES
+		No same matches
+
+		TXT FILE 				Number of words--> 274
+			SIMILAR MATCHES		 Pattern ->> 'rain'  Run Time ->> 0.0011699199676513672 seconds
+		No similar matches
+	No same matches
+
+		DOCX FILE 				Number of words->> 102678 
+			SIMILAR MATCHES		 Pattern->> 'rain'  Run Time->> 0.6364669799804688 seconds
+		7 matches found in training
+		1 matches found in strain
+		1 matches found in drain
+			SAME MATCHES
+		No same matches
+
+		HTML FILE 				Number of words--> 297
+			SIMILAR MATCHES		 Pattern ->> 'rain'  Run Time ->> 0.004350185394287109 seconds
+		No similar matches
+	No same matches
+
+		PDF FILE 				Number of words->> 108592 
+			SIMILAR MATCHES		 Pattern->> 'rain'  Run Time->> 0.4911963939666748 seconds
+		7 matches found in training
+		1 matches found in strain
+		1 matches found in drain
+			SAME MATCHES
+		No same matches
