@@ -1,7 +1,7 @@
 
 import time                             # algoritmanın çalışma süresini bilmek için dahil ettim 
 import docx                             # Word belgesini okumak için docx modülünü dahil ettim
-import PyPDF2                          # pdf     ""       ""    ""  PyPDF2 ""      ""     ""      
+import PyPDF2                           # pdf     ""       ""    ""  PyPDF2 ""      ""     ""      
 from re import findall                  # sadece kelimeri almak için re modülünden findall metodunu kullandım.
 
 class Stack:                       
@@ -204,22 +204,22 @@ if __name__ == "__main__":
     # .Txt File 
     Stack_txt = Stack()
     Stack_txt.PreLoading_file("example.txt") 
-    Stack_txt.search_analysis_txt("rain")
+    Stack_txt.search_analysis_txt("rain".lower())
 
     # .Docx File
     Stack_docx = Stack()
     Stack_docx.PreLoading_file("example.docx")
-    Stack_docx.search_analysis_docx("rain")  
+    Stack_docx.search_analysis_docx("rain".lower())  
 
     # .Html file
     Stack_html = Stack()
     Stack_html.PreLoading_file("example.html")
-    Stack_html.search_analysis_html("rain")
+    Stack_html.search_analysis_html("rain".lower())
 
     # .Pdf File
     Stack_pdf = Stack()
     Stack_pdf.PreLoading_file("example.pdf")
-    Stack_pdf.search_analysis_pdf("rain")
+    Stack_pdf.search_analysis_pdf("rain".lower())
     
     
     
