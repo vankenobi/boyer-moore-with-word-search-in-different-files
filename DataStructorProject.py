@@ -45,6 +45,7 @@ class Stack:
                 page = page.extractText()
                 for j in findall(r"[\w']+",page):
                      self.push(j.lower())
+
         if "html" in file.split("."):
             with open(file,"r",encoding="utf-8") as f:
                 copy = f.read()
@@ -52,14 +53,15 @@ class Stack:
                 for text in copy:
                     self.push(text.lower())
 
-    def BCL(self,word,lenght_):                 # BCL metodu kötü karakter tablosunu liste halinde döndürür.
+    def BCL(self,word:list,lenght_:int):                 # BCL metodu kötü karakter tablosunu liste halinde döndürür.
         no_of_chars = 256
         badChar = [-1]*no_of_chars
+
         for i in range(lenght_):
             badChar[ord(word[i])] = i     
         return badChar
 
-    def search(self,txt,pat):       # method içerisinde boyer moore arama algoritması çalışır
+    def search(self,txt:str,pat:str):       # method içerisinde boyer moore arama algoritması çalışır
         m = len(pat)                # aranacak olan kelime 
         n = len(txt)                # Metnin içerisinde aradığımız kelime
         
@@ -70,7 +72,7 @@ class Stack:
             j = m-1
             while j>=0 and pat[j] == txt[s+j]:
                 j -= 1
-            if j<0:                    
+            if j<0:                     
                 if m == n:   # Eğer aranan boyut(kelime) = boyut(aranacak kelime)
                     self.same_matches += [txt]
                     #print("tam eşleşme sağlandı: {}".format(txt))  
@@ -83,7 +85,7 @@ class Stack:
                 s += max(1,j-badChar[ord(txt[s+j])])
         return self.same_matches,self.similar_matches
 
-    def search_analysis_txt(self,pat): 
+    def search_analysis_txt(self,pat:str): 
         start_time = time.time()
         for i in self.getStack():
             self.search(i,pat)
@@ -111,7 +113,7 @@ class Stack:
                 f.write("\t\t\tSAME MATCHES\n")         
                 f.write("\t\t{} matches found in {}\n".format(len(self.same_matches),self.same_matches[0]))
 
-    def search_analysis_docx(self,pat):
+    def search_analysis_docx(self,pat:str):
         start_time = time.time()
         for i in self.getStack():
             self.search(i,pat)
@@ -141,7 +143,7 @@ class Stack:
                 f.write("\t\t\tSAME MATCHES\n")         
                 f.write("\t\t{} matches found in {}\n".format(len(self.same_matches),self.same_matches[0]))
 
-    def search_analysis_pdf(self,pat):
+    def search_analysis_pdf(self,pat:str):
         start_time = time.time()
         for i in self.getStack():
             self.search(i,pat)
@@ -171,7 +173,7 @@ class Stack:
                 f.write("\t\t\tSAME MATCHES\n")         
                 f.write("\t\t{} matches found in {}\n".format(len(self.same_matches),self.same_matches[0]))
 
-    def search_analysis_html(self,pat): 
+    def search_analysis_html(self,pat:str): 
         start_time = time.time()
         for i in self.getStack():
             self.search(i,pat)
