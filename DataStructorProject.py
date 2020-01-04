@@ -1,6 +1,6 @@
 
-import time                             # algoritmanın çalışma süresini bilmek için dahil ettim 
-import docx                             # Word belgesini okumak için docx modülünü dahil ettim
+import time                             # algoritmanın çalışma süresini bilmek için dahil ettim.
+import docx                             # Word belgesini okumak için docx modülünü dahil ettim.
 import PyPDF2                           # pdf     ""       ""    ""  PyPDF2 ""      ""     ""      
 from re import findall                  # sadece kelimeri almak için re modülünden findall metodunu kullandım.
 
@@ -91,7 +91,6 @@ class Stack:
         for i in self.getStack():
             self.search(i,pat)
         end_time = time.time()
-        
         with open("search_analysis_txt","a",encoding="utf-8") as f:
             f.write("\n\t\tTXT FILE \t\t\t\tNumber of words--> {}\n\t\t\tSIMILAR MATCHES\t\t Pattern ->> '{}'  Run Time ->> {} seconds\n"
             .format(self.Lenght(),pat,end_time-start_time))
