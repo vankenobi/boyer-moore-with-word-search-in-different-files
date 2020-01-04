@@ -20,6 +20,7 @@ class Stack:
         return len(self.items)
 
     def PreLoading_file(self,file:str):     # Önyükleme metodu txt dosyasındaki kelimeleri liste içerisine ekler.
+        
         if "txt" in file.split("."):        # Eğer dosya txt dosyası ise
             with open(file,"r",encoding="utf-8") as f: 
                 copy = f.read()
